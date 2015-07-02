@@ -16,10 +16,12 @@ Cluster Client Test
 
 
 Client for compute nodes to communicate via REST API with master server.
-
+This is for test purposes. The master server should be setup with `ansible django stack <https://github.com/RayCrafter/ansible-django-stack>`_.
+The django project to test against is `djangotest <https://github.com/RayCrafter/djangotest>`_.
 
 Features
 --------
 
-* TODO
+* Authentication via OAuth2.
+* Sends a request to the REST API
 
