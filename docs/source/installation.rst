@@ -2,12 +2,11 @@
 Installation
 ============
 
-At the command line either via easy_install or pip::
+Clone the repo on the hornet or copy the source.
+On the hornet::
 
-    $ easy_install clusterclienttest
-    $ pip install clusterclienttest
-
-Or, if you have virtualenvwrapper installed::
-
-    $ mkvirtualenv clusterclienttest
-    $ pip install clusterclienttest
+  $ module load tools/python/3.4.3
+  $ pyvenv ~/.virtualenvs/clusterclienttest
+  $ source ~/.virtualenvs/clusterclienttest/bin/activate
+  $ in the project dir call
+  $ python setup.py
