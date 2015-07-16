@@ -6,7 +6,8 @@ Register an application on your master server here ``https://<urltoserver>/admin
 On the hornet create a json file at ``~/.clusterclienttest/config.json``::
 
   {
-    "baseurl": "https://<url to the server>",
+    "host": "<url to the server>",
+    "logport": <port for graylog input>
     "redirecturi": "<redirecturi>",
     "username": "<username>",
     "password": "<password>",
