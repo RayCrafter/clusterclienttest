@@ -54,7 +54,7 @@ setup(
     tests_require=tests_require,
     install_requires=install_requires,
     cmdclass={'test': Tox},
-    scripts=['scripts/qsub.sh'],
+    scripts=['scripts/clientclustertest'],
     license='BSD',
     zip_safe=False,
     keywords='clusterclienttest',
