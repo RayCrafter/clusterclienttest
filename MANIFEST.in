@@ -1,5 +1,4 @@
 graft src
-graft scripts
 
 include LICENSE
 include *.txt
