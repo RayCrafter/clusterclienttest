@@ -4,12 +4,21 @@ import argparse
 import json
 import logging
 
+import graypy
 import oauthlib
 import requests_oauthlib
 
-from clusterclienttest import logger
+import clusterlogger
 
 logging.basicConfig(level=logging.INFO)
+
+
+def setup_logger(name, host, port):
+    log = logging.getLogger(name)
+    handler = graypy.GELFHandler(host, port)
+    log.addHandler(handler)
+    log.addFilter(clusterlogger.HazelHenFilter())
+    return log
 
 
 def create_parser():
@@ -45,7 +54,7 @@ clientid = js['clientid']
 clientsecret = js['clientsecret']
 redirecturi = js['redirecturi']
 
-log = logger.setup_logger('clusterclient', host, logport)
+log = setup_logger('clusterclient', host, logport)
 
 baseurl = 'https://' + host
 tokenurl = baseurl + '/o/token/'

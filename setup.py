@@ -36,7 +36,7 @@ class Tox(TestCommand):
 
 
 long_description = read('README.rst', 'HISTORY.rst')
-install_requires = ['requests-oauthlib', 'oauthlib', 'graypy']
+install_requires = ['requests-oauthlib', 'oauthlib', 'graypy', 'clusterlogger']
 tests_require = ['tox']
 
 
@@ -54,6 +54,7 @@ setup(
     tests_require=tests_require,
     install_requires=install_requires,
     cmdclass={'test': Tox},
+    scripts=['scripts/qsub.sh'],
     license='BSD',
     zip_safe=False,
     keywords='clusterclienttest',
