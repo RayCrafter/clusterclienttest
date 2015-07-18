@@ -42,7 +42,7 @@ tests_require = ['tox']
 
 setup(
     name='clusterclienttest',
-    version='0.1.0',
+    version='0.1.1',
     description='Client for compute nodes to communicate via REST API with master server.',
     long_description=long_description,
     author='David Zuber',
