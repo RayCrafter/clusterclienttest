@@ -16,7 +16,7 @@ On the hornet create a json file at ``~/.clusterclienttest/config.json``::
   }
 
 Have a look at the jobscript ``qsubscript``. It is an example for how one would write
-the job script. It asserts that you have a virtualenv ``clusterclienttest`` in ``~/.virtualenv/``:
+the job script. It asserts that you have a virtualenv ``clusterclienttest`` in ``~/.virtualenvs/``:
 
 .. literalinclude:: /../../qsubscript
    :linenos:
