@@ -2,13 +2,21 @@
 Cluster Client Test
 =========================================================
 
+.. image:: http://img.shields.io/pypi/v/clusterclienttest.png?style=flat
+    :target: https://pypi.python.org/pypi/clusterclienttest
+    :alt: PyPI version
+
+.. image:: http://img.shields.io/pypi/dm/clusterclient.png?style=flat
+    :target: https://pypi.python.org/pypi/clusterclienttest
+    :alt: Downloads per month
+
+.. image:: http://img.shields.io/pypi/l/clusterclienttest.png?style=flat
+    :target: https://pypi.python.org/pypi/clusterclienttest
+    :alt: License
+
 .. image::  https://img.shields.io/travis/RayCrafter/clusterclienttest/master.png?style=flat
     :target: https://travis-ci.org/RayCrafter/clusterclienttest
     :alt: Build Status
-
-.. image:: https://img.shields.io/coveralls/RayCrafter/clusterclienttest/master.png?style=flat
-    :target: https://coveralls.io/r/RayCrafter/clusterclienttest
-    :alt: Coverage
 
 .. image:: https://readthedocs.org/projects/clusterclienttest/badge/?version=latest&style=flat
     :target: http://clusterclienttest.readthedocs.org/en/latest/
@@ -24,4 +32,4 @@ Features
 
 * Authentication via OAuth2.
 * Sends a request to the REST API
-
+* Sends logs via to Graylog via TCP

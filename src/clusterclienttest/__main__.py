@@ -4,7 +4,6 @@ import argparse
 import json
 import logging
 
-import graypy
 import oauthlib
 import requests_oauthlib
 
@@ -15,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 
 def setup_logger(name, host, port):
     log = logging.getLogger(name)
-    handler = graypy.GELFHandler(host, port)
+    handler = clusterlogger.GELFTCPHandler(host, port)
     log.addHandler(handler)
     log.addFilter(clusterlogger.HazelHenFilter())
     return log

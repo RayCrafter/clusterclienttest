@@ -36,13 +36,13 @@ class Tox(TestCommand):
 
 
 long_description = read('README.rst', 'HISTORY.rst')
-install_requires = ['requests-oauthlib', 'oauthlib', 'graypy', 'clusterlogger']
+install_requires = ['requests-oauthlib', 'oauthlib', 'clusterlogger']
 tests_require = ['tox']
 
 
 setup(
     name='clusterclienttest',
-    version='0.1.1',
+    version='0.2.0',
     description='Client for compute nodes to communicate via REST API with master server.',
     long_description=long_description,
     author='David Zuber',
