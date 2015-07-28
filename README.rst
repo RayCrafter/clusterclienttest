@@ -32,4 +32,4 @@ Features
 
 * Authentication via OAuth2.
 * Sends a request to the REST API
-
+* Sends logs via to Graylog via TCP
