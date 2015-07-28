@@ -36,7 +36,7 @@ class Tox(TestCommand):
 
 
 long_description = read('README.rst', 'HISTORY.rst')
-install_requires = ['requests-oauthlib', 'oauthlib', 'graypy', 'clusterlogger']
+install_requires = ['requests-oauthlib', 'oauthlib', 'clusterlogger']
 tests_require = ['tox']
 
 
